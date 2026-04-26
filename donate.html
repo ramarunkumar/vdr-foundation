@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -23,17 +23,17 @@
   <body>
     <!-- ================= NAVBAR ================= -->
     <nav
-      class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow-sm"
+      class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm"
     >
       <div class="container">
         <a class="navbar-brand d-flex align-items-center" href="index.html">
           <img
             src="images/logo.png"
             alt="VDR Foundation Logo"
-            height="45"
+            height="60"
             class="me-2"
           />
-          <span class="brand-text">Foundation</span>
+          <span class="brand-text">VDR Foundation</span>
         </a>
         <button
           class="navbar-toggler"
@@ -47,13 +47,16 @@
         <div class="collapse navbar-collapse" id="navMenu">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" href="index.html">Home</a>
+              <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="about.html">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="donate.html">Donate</a>
+              <a class="nav-link" href="activities.html">Activities</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="donate.html">Donate</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact Us</a>
@@ -72,7 +75,7 @@
       <i class="fa-solid fa-phone"></i>
     </a>
     <!-- ================= PAGE HEADER ================= -->
-    <section class="bg-success text-white text-center py-5">
+    <section class="page-header text-white text-center py-5">
       <div class="container">
         <h1 class="fw-bold">Donate</h1>
         <p class="mt-2">Your contribution helps us change lives</p>
@@ -131,24 +134,24 @@
               <table class="table table-bordered">
                 <tbody>
                   <tr>
-                    <th>Trust Name</th>
+                    <th>Account Name</th>
                     <td>VDR FOUNDATION</td>
                   </tr>
                   <tr>
                     <th>Bank Name</th>
-                    <td>XXXXXXXX BANK</td>
+                    <td>DBS Bank India Limited</td>
                   </tr>
                   <tr>
                     <th>Account Number</th>
-                    <td>XXXXXXXXXXXX</td>
+                    <td>8196210000041618</td>
                   </tr>
                   <tr>
                     <th>IFSC Code</th>
-                    <td>XXXXXXXX</td>
+                    <td>DBSS0IN0196</td>
                   </tr>
                   <tr>
-                    <th>Account Type</th>
-                    <td>Savings / Current</td>
+                    <th>Bank Address</th>
+                    <td>Bypass Road, Madurai-625016, Tamil Nadu.</td>
                   </tr>
                 </tbody>
               </table>
@@ -167,16 +170,13 @@
 
               <!-- QR Image -->
               <img
-                src="images/upi-qr.png"
+                src="images/upi-qr.jpg"
                 alt="VDR Foundation UPI QR Code"
                 class="img-fluid mb-3 qr-img"
               />
 
-              <p class="fw-bold mb-1">UPI ID:</p>
-              <p class="text-primary">yourupi@bank</p>
-
               <p class="small text-muted">
-                Scan this QR code using any UPI app (GPay / PhonePe / Paytm)
+                Scan this QR code using any UPI app
               </p>
             </div>
           </div>
@@ -199,8 +199,36 @@
 
     <!-- ================= FOOTER ================= -->
     <footer class="bg-dark text-white py-4">
-      <div class="container text-center">
-        <p>© 2025 VDR FOUNDATION. All Rights Reserved.</p>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>VDR FOUNDATION</h5>
+            <p>Working towards dignity, inclusion, and care for all.</p>
+          </div>
+
+          <div class="col-md-4">
+            <h5>Contact</h5>
+            <p>
+              📍 Madurai, Tamil Nadu<br />
+              📞 +91 8122848669<br />
+              ✉️ vdrfoundation@gmail.com
+            </p>
+          </div>
+
+          <div class="col-md-4">
+            <h5>Quick Links</h5>
+            <a href="index.html" class="footer-link">Home</a><br />
+            <a href="about.html" class="footer-link">About Us</a><br />
+            <a href="activities.html" class="footer-link">Activities</a><br />
+            <a href="donate.html" class="footer-link">Donate</a><br />
+            <a href="contact.html" class="footer-link">Contact</a>
+          </div>
+        </div>
+
+        <hr />
+        <p class="text-center mb-0">
+          © 2025 VDR FOUNDATION. All Rights Reserved.
+        </p>
       </div>
     </footer>
     <!-- ================= WHATSAPP FLOATING BUTTON ================= -->
@@ -208,6 +236,7 @@
       href="https://wa.me/918122848669"
       class="whatsapp-float"
       target="_blank"
+      rel="noopener noreferrer"
       title="Chat with us on WhatsApp"
     >
       <i class="fa-brands fa-whatsapp"></i>

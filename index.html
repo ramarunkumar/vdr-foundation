@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -23,17 +23,17 @@
   <body>
     <!-- ================= NAVBAR ================= -->
     <nav
-      class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow-sm"
+      class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm"
     >
       <div class="container">
         <a class="navbar-brand d-flex align-items-center" href="index.html">
           <img
             src="images/logo.png"
             alt="VDR Foundation Logo"
-            height="45"
+            height="60"
             class="me-2"
           />
-          <span class="brand-text">Foundation</span>
+          <span class="brand-text">VDR Foundation</span>
         </a>
 
         <button
@@ -52,6 +52,9 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="activities.html">Activities</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="donate.html">Donate</a>
@@ -86,7 +89,7 @@
           <!-- Slide 1 -->
           <div class="carousel-item active">
             <img
-              src="images/gallery1.png"
+              src="images/gallery/gallery1.png"
               class="d-block w-100 hero-img"
               alt="Helping Community"
             />
@@ -104,7 +107,7 @@
           <!-- Slide 2 -->
           <div class="carousel-item">
             <img
-              src="images/gallery13.png"
+              src="images/gallery/gallery13.png"
               class="d-block w-100 hero-img"
               alt="Differently Abled Support"
             />
@@ -122,7 +125,7 @@
           <!-- Slide 4 -->
           <div class="carousel-item">
             <img
-              src="images/gallery14.png"
+              src="images/gallery/gallery14.png"
               class="d-block w-100 hero-img"
               alt="cloths given to poor family students"
             />
@@ -179,9 +182,9 @@
               <i class="fa-solid fa-eye fa-3x mb-3"></i>
               <h4>Our Vision</h4>
               <p>
-                A society where cleanliness workers and differently abled
-                individuals thrive with dignity, and senior citizens live with
-                respect and care.
+                To build an inclusive society where everyone, regardless of
+                their background or abilities, has equal access to opportunities
+                and resources.
               </p>
             </div>
           </div>
@@ -191,8 +194,9 @@
               <i class="fa-solid fa-bullseye fa-3x mb-3"></i>
               <h4>Our Mission</h4>
               <p>
-                Empowering vulnerable communities through education, skill
-                development, employment opportunities, and welfare initiatives.
+                To empower cleanliness workers, differently abled individuals,
+                and senior citizens through targeted programs that improve their
+                quality of life and foster social inclusion.
               </p>
             </div>
           </div>
@@ -216,37 +220,40 @@
       <div class="container">
         <h2 class="section-title text-center">Our Focus Areas</h2>
         <div class="row g-4 mt-4">
-          <div class="col-md-4">
-            <div class="focus-card text-center">
-              <i class="fa-solid fa-person-dress fa-3x mb-3"></i>
-              <i class="fa-solid fa-broom fa-2x ms-2 text-primary"></i>
-              <h5>Cleanliness Workers</h5>
-              <p>
-                Education, skill development, welfare support, and improved
-                working conditions.
-              </p>
+          <div class="col-lg-3 col-md-6">
+            <div class="compact-image-card h-100">
+              <img src="images/about/focus-area/social-inclusion.png" class="img-fluid" alt="Social Inclusion" />
+              <div class="compact-card-content">
+                <h5>Social Inclusion</h5>
+                <p>Creating an inclusive society by providing platforms and opportunities for cleanliness workers, differently-abled individuals, and senior citizens to be active participants in their communities.</p>
+              </div>
             </div>
           </div>
-
-          <div class="col-md-4">
-            <div class="focus-card text-center">
-              <i class="fa-solid fa-wheelchair fa-3x mb-3"></i>
-              <h5>Differently Abled</h5>
-              <p>
-                Inclusive education, employment opportunities, and accessibility
-                support.
-              </p>
+          <div class="col-lg-3 col-md-6">
+            <div class="compact-image-card h-100">
+              <img src="images/about/focus-area/healthcare-and-wellness.png" class="img-fluid" alt="Healthcare and Wellness" />
+              <div class="compact-card-content">
+                <h5>Healthcare and Wellness</h5>
+                <p>Ensuring access to healthcare services, promoting physical and mental well-being for marginalized groups who face barriers to essential services.</p>
+              </div>
             </div>
           </div>
-
-          <div class="col-md-4">
-            <div class="focus-card text-center">
-              <i class="fa-solid fa-person-cane fa-3x mb-3"></i>
-              <h5>Senior Citizens</h5>
-              <p>
-                Healthcare, emotional support, social engagement, and welfare
-                programs.
-              </p>
+          <div class="col-lg-3 col-md-6">
+            <div class="compact-image-card h-100">
+              <img src="images/about/focus-area/skill-development-and-employment.png" class="img-fluid" alt="Skill Development" />
+              <div class="compact-card-content">
+                <h5>Skill Development and Employment</h5>
+                <p>Offering vocational training and skill development programs to enhance employability and create economic independence for underserved communities.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="compact-image-card h-100">
+              <img src="images/about/focus-area/advocacy-and-awareness.png" class="img-fluid" alt="Advocacy and Awareness" />
+              <div class="compact-card-content">
+                <h5>Advocacy and Awareness</h5>
+                <p>Challenging societal stigma and raising awareness to foster respect, equality, and dignity for all individuals, regardless of their background or abilities.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -276,6 +283,7 @@
           id="galleryCarousel"
           class="carousel slide mt-4"
           data-bs-ride="carousel"
+          data-bs-interval="3000"
         >
           <div class="carousel-inner">
             <!-- Slide 1 -->
@@ -283,22 +291,22 @@
               <div class="row g-3">
                 <div class="col-md-3 col-sm-6">
                   <div class="gallery-box">
-                    <img src="images/gallery1.png" alt="Gallery 1" />
+                    <img src="images/gallery/gallery1.png" alt="Gallery 1" />
                   </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
                   <div class="gallery-box">
-                    <img src="images/gallery2.png" alt="Gallery 2" />
+                    <img src="images/gallery/gallery2.png" alt="Gallery 2" />
                   </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
                   <div class="gallery-box">
-                    <img src="images/gallery3.png" alt="Gallery 3" />
+                    <img src="images/gallery/gallery3.png" alt="Gallery 3" />
                   </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
                   <div class="gallery-box">
-                    <img src="images/gallery4.png" alt="Gallery 4" />
+                    <img src="images/gallery/gallery4.png" alt="Gallery 4" />
                   </div>
                 </div>
               </div>
@@ -309,47 +317,74 @@
               <div class="row g-3">
                 <div class="col-md-3 col-sm-6">
                   <div class="gallery-box">
-                    <img src="images/gallery5.png" alt="Gallery 5" />
+                    <img src="images/gallery/gallery5.png" alt="Gallery 5" />
                   </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
                   <div class="gallery-box">
-                    <img src="images/gallery6.png" alt="Gallery 6" />
+                    <img src="images/gallery/gallery6.png" alt="Gallery 6" />
                   </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
                   <div class="gallery-box">
-                    <img src="images/gallery7.png" alt="Gallery 7" />
+                    <img src="images/gallery/gallery7.png" alt="Gallery 7" />
                   </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
                   <div class="gallery-box">
-                    <img src="images/gallery8.png" alt="Gallery 8" />
+                    <img src="images/gallery/gallery8.png" alt="Gallery 8" />
                   </div>
                 </div>
               </div>
             </div>
+
             <!-- Slide 3 -->
             <div class="carousel-item">
               <div class="row g-3">
                 <div class="col-md-3 col-sm-6">
                   <div class="gallery-box">
-                    <img src="images/gallery9.png" alt="Gallery 5" />
+                    <img src="images/gallery/gallery9.png" alt="Gallery 9" />
                   </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
                   <div class="gallery-box">
-                    <img src="images/gallery10.png" alt="Gallery 6" />
+                    <img src="images/gallery/gallery10.png" alt="Gallery 10" />
                   </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
                   <div class="gallery-box">
-                    <img src="images/gallery11.png" alt="Gallery 7" />
+                    <img src="images/gallery/gallery11.png" alt="Gallery 11" />
                   </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
                   <div class="gallery-box">
-                    <img src="images/gallery12.png" alt="Gallery 8" />
+                    <img src="images/gallery/gallery12.png" alt="Gallery 12" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="carousel-item">
+              <div class="row g-3">
+                <div class="col-md-3 col-sm-6">
+                  <div class="gallery-box">
+                    <img src="images/gallery/gallery13.png" alt="Gallery 13" />
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                  <div class="gallery-box">
+                    <img src="images/gallery/gallery14.png" alt="Gallery 14" />
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                  <div class="gallery-box">
+                    <img src="images/gallery/gallery15.png" alt="Gallery 15" />
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                  <div class="gallery-box">
+                    <img src="images/gallery/gallery1.png" alt="Gallery 1" />
                   </div>
                 </div>
               </div>
@@ -409,8 +444,9 @@
 
           <div class="col-md-4">
             <h5>Quick Links</h5>
-            <a href="#" class="footer-link">Home</a><br />
+            <a href="index.html" class="footer-link">Home</a><br />
             <a href="about.html" class="footer-link">About Us</a><br />
+            <a href="activities.html" class="footer-link">Activities</a><br />
             <a href="donate.html" class="footer-link">Donate</a><br />
             <a href="contact.html" class="footer-link">Contact</a>
           </div>
@@ -427,6 +463,7 @@
       href="https://wa.me/918122848669"
       class="whatsapp-float"
       target="_blank"
+      rel="noopener noreferrer"
       title="Chat with us on WhatsApp"
     >
       <i class="fa-brands fa-whatsapp"></i>

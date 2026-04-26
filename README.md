@@ -1,2 +1,0 @@
-# vdr_foundation
-Trust

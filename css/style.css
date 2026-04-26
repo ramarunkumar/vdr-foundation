@@ -16,20 +16,41 @@ body {
 }
 
 /* ================= NAVBAR ================= */
+.navbar {
+  background: rgba(13, 110, 253, 0.92) !important;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+  border-radius: 50%;
+  padding: 3px;
+  background: transparent;
+  border: none;
+}
+
 .navbar-light .nav-link {
-  color: #0d6efd;
+  color: #ffffff !important;
   font-weight: 500;
 }
 
 .navbar-light .nav-link:hover,
 .navbar-light .nav-link.active {
-  color: #084298;
+  color: #ffc107 !important;
 }
 
 .brand-text {
   font-size: 1.2rem;
   font-weight: 700;
-  color: #2f5692;
+  color: #ffffff;
+}
+
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 /* ================= HERO SLIDER ================= */
@@ -105,7 +126,21 @@ body {
 
 /* ================= DONATE CTA ================= */
 .donate-section {
-  background: linear-gradient(45deg, #0d6efd, #198754);
+  background: linear-gradient(135deg, #0d6efd 0%, #198754 100%);
+}
+
+/* ================= PAGE HEADER ================= */
+.page-header {
+  background: linear-gradient(135deg, #0d6efd 0%, #198754 100%);
+  position: relative;
+}
+
+.page-header-blue {
+  background: #0d6efd;
+}
+
+.page-header-green {
+  background: #198754;
 }
 
 /* ================= FOOTER ================= */
@@ -199,4 +234,443 @@ body {
 /* Improve touch */
 .carousel {
   touch-action: pan-y;
+}
+
+/* ================= ACTIVITIES PAGE ================= */
+.activity-section {
+  margin-bottom: 40px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.activity-section:last-child {
+  border-bottom: none;
+}
+
+.activity-section h4 {
+  font-weight: 600;
+}
+
+.activity-section img {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.activity-section img:hover {
+  transform: scale(1.05);
+}
+
+/* Activity Cards */
+.activity-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.activity-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.activity-image-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.activity-image-wrapper img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.activity-card:hover .activity-image-wrapper img {
+  transform: scale(1.1);
+}
+
+.activity-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 8px 20px;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.activity-content {
+  padding: 20px;
+}
+
+.activity-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.activity-description {
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.activity-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.activity-tags .badge {
+  padding: 8px 15px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+/* Gallery Cards */
+.activity-gallery-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.activity-gallery-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.activity-gallery-image {
+  position: relative;
+  overflow: hidden;
+  height: 250px;
+  cursor: pointer;
+}
+
+.activity-gallery-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.activity-gallery-card:hover .activity-gallery-image img {
+  transform: scale(1.15);
+}
+
+.activity-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.activity-gallery-card:hover .activity-overlay {
+  opacity: 0;
+}
+
+.activity-overlay i {
+  display: none;
+}
+
+/* Image Modal on Click */
+.activity-gallery-image:hover {
+  cursor: pointer;
+}
+
+/* Lightbox Modal */
+.image-lightbox {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  align-items: center;
+  justify-content: center;
+}
+
+.image-lightbox.active {
+  display: flex;
+}
+
+.lightbox-content {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+  animation: zoomIn 0.3s ease;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.lightbox-close:hover {
+  color: #bbb;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.activity-gallery-content {
+  padding: 20px;
+}
+
+.activity-gallery-content h5 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .activity-card {
+    padding: 20px;
+  }
+  
+  .activity-image-wrapper img {
+    height: 200px;
+  }
+  
+  .activity-title {
+    font-size: 1.2rem;
+  }
+  
+  .activity-gallery-image {
+    height: 200px;
+  }
+}
+
+/* Tablet responsive */
+@media (min-width: 769px) and (max-width: 991px) {
+  .compact-image-card img {
+    height: 180px;
+  }
+  
+  .revenue-image {
+    max-width: 160px;
+  }
+  
+  .activity-image-wrapper img {
+    height: 250px;
+  }
+  
+  .activity-gallery-image {
+    height: 220px;
+  }
+}
+
+/* ================= IMAGE CARDS ================= */
+.image-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.image-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.image-card-content {
+  padding: 20px;
+}
+
+.image-card-content h5 {
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.image-card-content p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+/* Compact Image Cards */
+.compact-image-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.compact-image-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.compact-image-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  padding: 15px;
+  background: #f8f9fa;
+}
+
+.compact-card-content {
+  padding: 20px;
+}
+
+.compact-card-content h5 {
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #2c3e50;
+  font-size: 1.1rem;
+}
+
+.compact-card-content p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 0;
+  font-size: 0.95rem;
+}
+
+/* Solution and Revenue Images */
+.solution-image {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+}
+
+.revenue-image {
+  max-width: 180px;
+  width: 100%;
+  height: auto;
+}
+
+/* Market Cards */
+.market-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.market-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.market-card img {
+  max-height: 250px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.market-card h5 {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.market-card p {
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .compact-image-card img {
+    height: 150px;
+  }
+  
+  .market-card img {
+    max-height: 180px;
+  }
+  
+  .solution-image {
+    max-width: 100%;
+  }
+  
+  .revenue-image {
+    max-width: 140px;
+  }
+  
+  /* Navbar adjustments */
+  .navbar-brand img {
+    height: 50px !important;
+  }
+  
+  .brand-text {
+    font-size: 1rem;
+  }
+  
+  /* Float buttons mobile */
+  .whatsapp-float {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    bottom: 15px;
+    right: 15px;
+  }
+  
+  .call-float {
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+    top: 80px;
+    right: 15px;
+  }
+  
+  /* Section padding mobile */
+  section {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+  
+  /* Card padding mobile */
+  .info-card,
+  .focus-card {
+    padding: 20px;
+  }
+  
+  /* Trust image mobile */
+  .trust-img {
+    max-width: 100%;
+  }
 }
