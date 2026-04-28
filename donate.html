@@ -22,9 +22,7 @@
   </head>
   <body>
     <!-- ================= NAVBAR ================= -->
-    <nav
-      class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm"
-    >
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm">
       <div class="container">
         <a class="navbar-brand d-flex align-items-center" href="index.html">
           <img
@@ -123,61 +121,112 @@
     <!-- ================= DONATION DETAILS WITH QR ================= -->
     <section class="bg-light py-5">
       <div class="container">
-        <h2 class="section-title text-center">Donate via UPI / Bank</h2>
+        <!-- Tax Info Badge -->
+        <div class="text-center mb-5">
+          <div class="tax-info-badge">
+            <div class="tax-badge-icon">
+              <i class="fas fa-certificate"></i>
+            </div>
+            <div class="tax-badge-content">
+              <div class="tax-badge-title">80G Tax Exemption Certificate</div>
+              <div class="tax-badge-number">80G No: AACTV0966GF20251</div>
+              <div class="tax-badge-clause">12-Sub-clause (A) of clause (iv) of first provision to sub-section (5) of section 80G</div>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="section-title text-center mb-5">Choose Your Donation Method</h2>
 
         <div class="row justify-content-center mt-4 g-4">
           <!-- BANK DETAILS SECTION -->
-          <div class="col-md-6">
-            <div class="info-card h-100">
-              <h4 class="mb-3 text-center">Bank Account Details</h4>
+          <div class="col-lg-6">
+            <div class="donation-card h-100">
+              <div class="donation-card-header">
+                <i class="fas fa-university fa-2x text-primary mb-3"></i>
+                <h4 class="mb-0">Bank Account Details</h4>
+                <p class="text-muted small mb-0">Direct bank transfer</p>
+              </div>
 
-              <table class="table table-bordered">
-                <tbody>
-                  <tr>
-                    <th>Account Name</th>
-                    <td>VDR FOUNDATION</td>
-                  </tr>
-                  <tr>
-                    <th>Bank Name</th>
-                    <td>DBS Bank India Limited</td>
-                  </tr>
-                  <tr>
-                    <th>Account Number</th>
-                    <td>8196210000041618</td>
-                  </tr>
-                  <tr>
-                    <th>IFSC Code</th>
-                    <td>DBSS0IN0196</td>
-                  </tr>
-                  <tr>
-                    <th>Bank Address</th>
-                    <td>Bypass Road, Madurai-625016, Tamil Nadu.</td>
-                  </tr>
-                </tbody>
-              </table>
+              <div class="donation-card-body">
+                <div class="bank-detail-item">
+                  <div class="bank-detail-label">
+                    <i class="fas fa-building text-primary me-2"></i>Account Name
+                  </div>
+                  <div class="bank-detail-value">VDR FOUNDATION</div>
+                </div>
 
-              <p class="text-center mt-3">
-                <strong>Note:</strong> After donation, please contact us for
-                receipt.
-              </p>
+                <div class="bank-detail-item">
+                  <div class="bank-detail-label">
+                    <i class="fas fa-landmark text-primary me-2"></i>Bank Name
+                  </div>
+                  <div class="bank-detail-value">DBS Bank India Limited</div>
+                </div>
+
+                <div class="bank-detail-item">
+                  <div class="bank-detail-label">
+                    <i class="fas fa-hashtag text-primary me-2"></i>Account Number
+                  </div>
+                  <div class="bank-detail-value fw-bold">8196210000041618</div>
+                </div>
+
+                <div class="bank-detail-item">
+                  <div class="bank-detail-label">
+                    <i class="fas fa-code text-primary me-2"></i>IFSC Code
+                  </div>
+                  <div class="bank-detail-value fw-bold">DBSS0IN0196</div>
+                </div>
+
+                <div class="bank-detail-item">
+                  <div class="bank-detail-label">
+                    <i class="fas fa-map-marker-alt text-primary me-2"></i>Bank Address
+                  </div>
+                  <div class="bank-detail-value">Bypass Road, Madurai-625016, Tamil Nadu</div>
+                </div>
+              </div>
+
+              <div class="donation-card-footer">
+                <div class="alert alert-info mb-0">
+                  <i class="fas fa-info-circle me-2"></i>
+                  <strong>Important:</strong> Please contact us after donation for your tax receipt.
+                </div>
+              </div>
             </div>
           </div>
 
           <!-- QR CODE SECTION -->
-          <div class="col-md-5">
-            <div class="info-card text-center h-100">
-              <h4 class="mb-3">Scan & Pay</h4>
+          <div class="col-lg-5">
+            <div class="donation-card h-100">
+              <div class="donation-card-header">
+                <i class="fas fa-qrcode fa-2x text-success mb-3"></i>
+                <h4 class="mb-0">Scan & Pay</h4>
+                <p class="text-muted small mb-0">Quick UPI payment</p>
+              </div>
 
-              <!-- QR Image -->
-              <img
-                src="images/upi-qr.jpg"
-                alt="VDR Foundation UPI QR Code"
-                class="img-fluid mb-3 qr-img"
-              />
+              <div class="donation-card-body text-center">
+                <div class="qr-code-container">
+                  <img
+                    src="images/upi-qr.jpg"
+                    alt="VDR Foundation UPI QR Code"
+                    class="img-fluid qr-code-image"
+                  />
+                </div>
 
-              <p class="small text-muted">
-                Scan this QR code using any UPI app
-              </p>
+                <div class="upi-instructions mt-4">
+                  <h6 class="fw-bold mb-3">How to Pay?</h6>
+                  <div class="upi-step">
+                    <span class="upi-step-number">1</span>
+                    <span class="upi-step-text">Open any UPI app</span>
+                  </div>
+                  <div class="upi-step">
+                    <span class="upi-step-number">2</span>
+                    <span class="upi-step-text">Scan the QR code</span>
+                  </div>
+                  <div class="upi-step">
+                    <span class="upi-step-number">3</span>
+                    <span class="upi-step-text">Complete payment</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

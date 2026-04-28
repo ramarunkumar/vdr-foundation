@@ -295,7 +295,7 @@ body {
   position: absolute;
   top: 15px;
   right: 15px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #0d6efd 0%, #198754 100%);
   color: white;
   padding: 8px 20px;
   border-radius: 25px;
@@ -672,5 +672,227 @@ body {
   /* Trust image mobile */
   .trust-img {
     max-width: 100%;
+  }
+}
+
+/* ================= TAX INFO BADGE ================= */
+.tax-info-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+  background: linear-gradient(135deg, #0d6efd 0%, #198754 100%);
+  color: white;
+  padding: 20px 35px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(13, 110, 253, 0.3);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.tax-badge-icon {
+  font-size: 3rem;
+  color: #ffd700;
+  animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.tax-badge-content {
+  text-align: left;
+}
+
+.tax-badge-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+}
+
+.tax-badge-number {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #ffd700;
+}
+
+.tax-badge-clause {
+  font-size: 0.85rem;
+  opacity: 0.9;
+  line-height: 1.4;
+}
+
+/* Responsive Tax Badge */
+@media (max-width: 768px) {
+  .tax-info-badge {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    gap: 15px;
+  }
+  
+  .tax-badge-content {
+    text-align: center;
+  }
+  
+  .tax-badge-icon {
+    font-size: 2.5rem;
+  }
+  
+  .tax-badge-title {
+    font-size: 1.1rem;
+  }
+  
+  .tax-badge-number {
+    font-size: 1rem;
+  }
+  
+  .tax-badge-clause {
+    font-size: 0.75rem;
+  }
+}
+
+/* ================= DONATION CARDS ================= */
+.donation-card {
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.donation-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.donation-card-header {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  padding: 30px;
+  text-align: center;
+  border-bottom: 3px solid #0d6efd;
+}
+
+.donation-card-header h4 {
+  font-weight: 700;
+  color: #2c3e50;
+  margin-top: 10px;
+}
+
+.donation-card-body {
+  padding: 30px;
+}
+
+.donation-card-footer {
+  padding: 20px 30px;
+  background: #f8f9fa;
+}
+
+.bank-detail-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.bank-detail-item:last-child {
+  border-bottom: none;
+}
+
+.bank-detail-label {
+  font-weight: 600;
+  color: #495057;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+}
+
+.bank-detail-value {
+  color: #2c3e50;
+  font-size: 1rem;
+  text-align: right;
+}
+
+.qr-code-container {
+  background: linear-gradient(135deg, #0d6efd 0%, #198754 100%);
+  padding: 20px;
+  border-radius: 15px;
+  display: inline-block;
+  box-shadow: 0 5px 20px rgba(13, 110, 253, 0.3);
+}
+
+.qr-code-image {
+  max-width: 250px;
+  border-radius: 10px;
+  background: white;
+  padding: 10px;
+}
+
+.upi-instructions {
+  text-align: left;
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.upi-step {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 10px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.upi-step:hover {
+  background: #e9ecef;
+}
+
+.upi-step-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(135deg, #0d6efd 0%, #198754 100%);
+  color: white;
+  border-radius: 50%;
+  font-weight: 700;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+.upi-step-text {
+  color: #495057;
+  font-size: 0.95rem;
+}
+
+/* Responsive Donation Cards */
+@media (max-width: 768px) {
+  .donation-card-header,
+  .donation-card-body,
+  .donation-card-footer {
+    padding: 20px;
+  }
+  
+  .bank-detail-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+  
+  .bank-detail-value {
+    text-align: left;
+  }
+  
+  .qr-code-image {
+    max-width: 200px;
   }
 }
