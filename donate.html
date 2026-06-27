@@ -4,21 +4,39 @@
     <meta charset="UTF-8" />
     <title>Donate | VDR FOUNDATION</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Support VDR Foundation via bank transfer or UPI. Help empower cleanliness workers, differently abled individuals, and senior citizens in Tamil Nadu."
+    />
+    <meta property="og:title" content="Donate | VDR Foundation" />
+    <meta
+      property="og:description"
+      content="Your contribution helps empower lives and build an inclusive society."
+    />
+    <meta property="og:image" content="assets/images/logo.png" />
+    <meta property="og:type" content="website" />
 
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
     />
 
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/gallery.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
   </head>
   <body>
     <!-- ================= NAVBAR ================= -->
@@ -26,7 +44,7 @@
       <div class="container">
         <a class="navbar-brand d-flex align-items-center" href="index.html">
           <img
-            src="images/logo.png"
+            src="assets/images/logo.png"
             alt="VDR Foundation Logo"
             height="60"
             class="me-2"
@@ -38,10 +56,12 @@
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navMenu"
+          aria-controls="navMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="navMenu">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
@@ -50,11 +70,32 @@
             <li class="nav-item">
               <a class="nav-link" href="about.html">About Us</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="activities.html">Activities</a>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="activities.html"
+                id="activitiesDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Activities</a
+              >
+              <ul class="dropdown-menu" aria-labelledby="activitiesDropdown">
+                <li>
+                  <a class="dropdown-item" href="activities.html">Overview</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="bag-donation.html"
+                    >Bag Donation</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="gallery.html">Gallery</a>
+                </li>
+              </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="donate.html">Donate</a>
+              <a class="nav-link" href="donate.html">Donate</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact Us</a>
@@ -130,12 +171,17 @@
             <div class="tax-badge-content">
               <div class="tax-badge-title">80G Tax Exemption Certificate</div>
               <div class="tax-badge-number">80G No: AACTV0966GF20251</div>
-              <div class="tax-badge-clause">12-Sub-clause (A) of clause (iv) of first provision to sub-section (5) of section 80G</div>
+              <div class="tax-badge-clause">
+                12-Sub-clause (A) of clause (iv) of first provision to
+                sub-section (5) of section 80G
+              </div>
             </div>
           </div>
         </div>
 
-        <h2 class="section-title text-center mb-5">Choose Your Donation Method</h2>
+        <h2 class="section-title text-center mb-5">
+          Choose Your Donation Method
+        </h2>
 
         <div class="row justify-content-center mt-4 g-4">
           <!-- BANK DETAILS SECTION -->
@@ -150,7 +196,8 @@
               <div class="donation-card-body">
                 <div class="bank-detail-item">
                   <div class="bank-detail-label">
-                    <i class="fas fa-building text-primary me-2"></i>Account Name
+                    <i class="fas fa-building text-primary me-2"></i>Account
+                    Name
                   </div>
                   <div class="bank-detail-value">VDR FOUNDATION</div>
                 </div>
@@ -164,7 +211,8 @@
 
                 <div class="bank-detail-item">
                   <div class="bank-detail-label">
-                    <i class="fas fa-hashtag text-primary me-2"></i>Account Number
+                    <i class="fas fa-hashtag text-primary me-2"></i>Account
+                    Number
                   </div>
                   <div class="bank-detail-value fw-bold">8196210000041618</div>
                 </div>
@@ -178,16 +226,20 @@
 
                 <div class="bank-detail-item">
                   <div class="bank-detail-label">
-                    <i class="fas fa-map-marker-alt text-primary me-2"></i>Bank Address
+                    <i class="fas fa-map-marker-alt text-primary me-2"></i>Bank
+                    Address
                   </div>
-                  <div class="bank-detail-value">Bypass Road, Madurai-625016, Tamil Nadu</div>
+                  <div class="bank-detail-value">
+                    Bypass Road, Madurai-625016, Tamil Nadu
+                  </div>
                 </div>
               </div>
 
               <div class="donation-card-footer">
                 <div class="alert alert-info mb-0">
                   <i class="fas fa-info-circle me-2"></i>
-                  <strong>Important:</strong> Please contact us after donation for your tax receipt.
+                  <strong>Important:</strong> Please contact us after donation
+                  for your tax receipt.
                 </div>
               </div>
             </div>
@@ -205,7 +257,7 @@
               <div class="donation-card-body text-center">
                 <div class="qr-code-container">
                   <img
-                    src="images/upi-qr.jpg"
+                    src="assets/images/upi-qr.jpg"
                     alt="VDR Foundation UPI QR Code"
                     class="img-fluid qr-code-image"
                   />
@@ -291,6 +343,14 @@
       <i class="fa-brands fa-whatsapp"></i>
     </a>
     <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/navigation.js"></script>
+    <script src="assets/js/slider.js"></script>
+    <script src="assets/js/gallery.js"></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>

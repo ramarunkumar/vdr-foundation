@@ -1,0 +1,452 @@
+/* ================= GLOBAL ================= */
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  padding-top: 70px;
+  font-family: "Segoe UI", sans-serif;
+  color: #263238;
+  background: #f8f9fa;
+}
+
+.section-title {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+  background: rgba(13, 110, 253, 0.92) !important;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+  border-radius: 50%;
+  padding: 3px;
+  background: transparent;
+  border: none;
+}
+
+.navbar-light .nav-link {
+  color: #ffffff !important;
+  font-weight: 500;
+}
+
+.navbar-light .nav-link:hover,
+.navbar-light .nav-link.active {
+  color: #ffc107 !important;
+}
+
+.brand-text {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar .dropdown-menu {
+  background: rgba(13, 110, 253, 0.97);
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  min-width: 180px;
+  padding: 8px 0;
+}
+
+.navbar .dropdown-item {
+  color: #fff;
+  font-weight: 500;
+  padding: 10px 20px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.navbar .dropdown-item:hover,
+.navbar .dropdown-item:focus {
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffc107;
+}
+
+.navbar .dropdown-item.active {
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffc107;
+}
+
+.navbar .nav-item.dropdown > .nav-link::after {
+  display: inline-block;
+  margin-left: 6px;
+  vertical-align: 2px;
+  content: "";
+  border-top: 0.35em solid;
+  border-right: 0.35em solid transparent;
+  border-left: 0.35em solid transparent;
+}
+
+/* ================= HERO SLIDER ================= */
+.hero-slider {
+  position: relative;
+}
+
+.hero-slider .carousel-item {
+  min-height: 65vh;
+}
+
+.hero-img {
+  width: 100%;
+  height: 65vh;
+  object-fit: cover;
+}
+
+.hero-caption-full {
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 85%;
+  background: rgba(0, 0, 0, 0.42);
+  padding: 22px 28px;
+  border-radius: 8px;
+}
+
+.hero-caption-full h1,
+.hero-caption-full .display-6 {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.hero-caption-full p {
+  font-size: 1.05rem;
+  color: #fff;
+}
+
+/* ================= CARDS ================= */
+.info-card,
+.focus-card,
+.image-card,
+.compact-image-card,
+.market-card,
+.donation-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-card,
+.focus-card {
+  padding: 25px;
+}
+
+.info-card i,
+.focus-card i {
+  color: #0d6efd;
+}
+
+.image-card:hover,
+.compact-image-card:hover,
+.market-card:hover,
+.donation-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.image-card img,
+.compact-image-card img,
+.market-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.image-card-content,
+.compact-card-content,
+.market-card,
+.donation-card-body {
+  padding: 20px;
+}
+
+.image-card-content h5,
+.compact-card-content h5,
+.market-card h5 {
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.image-card-content p,
+.compact-card-content p,
+.market-card p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.compact-image-card img {
+  height: 200px;
+  object-fit: contain;
+  padding: 15px;
+  background: #f8f9fa;
+}
+
+.compact-card-content h5 {
+  font-size: 1.1rem;
+}
+
+.solution-image,
+.revenue-image,
+.trust-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.solution-image {
+  max-width: 600px;
+  max-height: 420px;
+  width: auto;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+.revenue-image {
+  max-width: 180px;
+}
+
+.market-card img {
+  max-height: 250px;
+  object-fit: contain;
+}
+
+/* ================= DONATE CTA ================= */
+.donate-section {
+  background: linear-gradient(135deg, #0d6efd 0%, #198754 100%);
+}
+
+/* ================= PAGE HEADER ================= */
+.page-header {
+  background: linear-gradient(135deg, #0d6efd 0%, #198754 100%);
+  position: relative;
+}
+
+.page-header-blue {
+  background: #0d6efd;
+}
+
+.page-header-green {
+  background: #198754;
+}
+
+/* ================= FOOTER ================= */
+.footer-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+/* ================= FLOAT BUTTONS ================= */
+.whatsapp-float,
+.call-float {
+  position: fixed;
+  right: 20px;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+}
+
+.whatsapp-float {
+  width: 55px;
+  height: 55px;
+  bottom: 20px;
+  background: #25d366;
+  color: #fff;
+  font-size: 28px;
+}
+
+.call-float {
+  width: 50px;
+  height: 50px;
+  top: 90px;
+  background: #ffc107;
+  color: #000;
+  font-size: 20px;
+}
+
+/* ================= TRUST IMAGE ================= */
+.trust-img {
+  max-width: 600px;
+  margin: auto;
+}
+
+/* ================= TAX INFO BADGE ================= */
+.tax-info-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+  background: linear-gradient(135deg, #0d6efd 0%, #198754 100%);
+  color: white;
+  padding: 20px 35px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(13, 110, 253, 0.3);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.tax-badge-icon {
+  font-size: 3rem;
+  color: #ffd700;
+  animation: rotate 3s linear infinite;
+}
+
+.tax-badge-content {
+  text-align: left;
+}
+
+.tax-badge-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+}
+
+.tax-badge-number {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #ffd700;
+}
+
+.tax-badge-clause {
+  font-size: 0.85rem;
+  opacity: 0.9;
+  line-height: 1.4;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ================= DONATION CARDS ================= */
+.donation-card-header {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  padding: 30px;
+  text-align: center;
+  border-bottom: 3px solid #0d6efd;
+}
+
+.donation-card-header h4 {
+  font-weight: 700;
+  color: #2c3e50;
+  margin-top: 10px;
+}
+
+.donation-card-body {
+  padding: 30px;
+}
+
+.donation-card-footer {
+  padding: 20px 30px;
+  background: #f8f9fa;
+}
+
+.bank-detail-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.bank-detail-item:last-child {
+  border-bottom: none;
+}
+
+.bank-detail-label {
+  font-weight: 600;
+  color: #495057;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+}
+
+.bank-detail-value {
+  color: #2c3e50;
+  font-size: 1rem;
+  text-align: right;
+}
+
+.qr-code-container {
+  background: linear-gradient(135deg, #0d6efd 0%, #198754 100%);
+  padding: 20px;
+  border-radius: 15px;
+  display: inline-block;
+  box-shadow: 0 5px 20px rgba(13, 110, 253, 0.3);
+}
+
+.qr-code-image {
+  max-width: 250px;
+  border-radius: 10px;
+  background: white;
+  padding: 10px;
+}
+
+.upi-instructions {
+  text-align: left;
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.upi-step {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 10px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.upi-step:hover {
+  background: #e9ecef;
+}
+
+.upi-step-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(135deg, #0d6efd 0%, #198754 100%);
+  color: white;
+  border-radius: 50%;
+  font-weight: 700;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+.upi-step-text {
+  color: #495057;
+  font-size: 0.95rem;
+}

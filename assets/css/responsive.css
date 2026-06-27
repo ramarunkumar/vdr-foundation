@@ -1,0 +1,112 @@
+@media (max-width: 768px) {
+  .hero-img {
+    min-height: 45vh;
+  }
+
+  .hero-caption-full {
+    width: 95%;
+    padding: 14px 16px;
+    text-align: center;
+    bottom: 5%;
+  }
+
+  .hero-caption-full h1,
+  .hero-caption-full .display-6 {
+    font-size: 1.2rem;
+    line-height: 1.3;
+  }
+
+  .hero-caption-full p {
+    font-size: 0.9rem;
+  }
+
+  .compact-image-card img {
+    height: 150px;
+  }
+
+  .market-card img {
+    max-height: 180px;
+  }
+
+  .solution-image {
+    max-width: 100%;
+  }
+
+  .revenue-image {
+    max-width: 140px;
+  }
+
+  .navbar-brand img {
+    height: 50px !important;
+  }
+
+  .brand-text {
+    font-size: 1rem;
+  }
+
+  .whatsapp-float {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .call-float {
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+    top: 80px;
+    right: 15px;
+  }
+
+  section {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+
+  .info-card,
+  .focus-card,
+  .donation-card {
+    padding: 20px;
+  }
+
+  .trust-img {
+    max-width: 100%;
+  }
+
+  .bd-gallery-grid {
+    columns: 2;
+  }
+}
+
+@media (max-width: 991px) {
+  .gallery-box img {
+    max-height: 220px;
+  }
+
+  .bd-gallery-grid {
+    columns: 3;
+  }
+}
+
+@media (min-width: 992px) {
+  .gallery-box img {
+    max-height: 260px;
+  }
+}
+
+@media (max-width: 576px) {
+  .gallery-box img {
+    max-height: 180px;
+  }
+
+  .bd-gallery-grid {
+    columns: 2;
+    column-gap: 8px;
+  }
+
+  .bd-gallery-item {
+    margin-bottom: 8px;
+  }
+}
